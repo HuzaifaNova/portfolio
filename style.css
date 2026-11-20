@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b1120;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    background: rgba(11, 17, 32, 0.92);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #38bdf8;
+    font-family: monospace;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tag {
+    background: rgba(56, 189, 248, 0.12);
+    color: #38bdf8;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 14px;
+    color: #f8fafc;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+.btn.primary:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    background: #1e293b;
+}
+
+.btn.secondary:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+/* Containers */
+.container {
+    padding: 70px 10%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #f8fafc;
+}
+
+/* About */
+.about-card {
+    background: #131c31;
+    border: 1px solid #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    color: #cbd5e1;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background: #131c31;
+    border: 1px solid #1e293b;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background: #131c31;
+    border: 1px solid #1e293b;
+    padding: 26px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tech-tags span {
+    background: #0b1120;
+    color: #38bdf8;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid #1e293b;
+}
+
+.project-card a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contact-card {
+    background: #131c31;
+    border: 1px solid #1e293b;
+    padding: 40px 25px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card p {
+    color: #94a3b8;
+    margin-bottom: 22px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 650px) {
+    .hero h1 { font-size: 2.3rem; }
+    header { flex-direction: column; gap: 12px; }
+    nav a { margin: 0 10px; }
+}
